@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -65,7 +64,8 @@
   <!-- Hero Section -->
   <header class="hero">
     <h1>Hi 👋, I'm <span style="color:#ffeb3b;">Vinay Mhatre</span></h1>
-    <p>⚡ Backend Expert in Spring Boot, FastAPI, Kafka, Microservices | 🎨 Frontend: React & Next.js | ☁️ Cloud & API Security Enthusiast</p>
+    <p>⚡ Backend Expert in Spring Boot, FastAPI, Kafka, Microservices | </p>
+    <p>🎨 Frontend: React & Next.js | ☁️ Cloud & API Security Enthusiast</p>
     <a href="#contact" class="cta-btn">Hire Me / Contact</a>
   </header>
 
