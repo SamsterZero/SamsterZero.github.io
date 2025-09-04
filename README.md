@@ -147,6 +147,10 @@
     
       <!-- Social Links -->
       <div style="display:flex; gap:1rem; justify-content:center; margin-bottom:2rem;">
+        <a href="mailto:vinaymhatre@gmail.com"
+          style="background:#34D399; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-weight:600;">
+          Email Me
+        </a>
         <a href="https://www.linkedin.com/in/vinay-mhatre-401595206" target="_blank" 
            style="background:#0A66C2; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-weight:600; text-decoration:none; transition:all 0.3s;">
            LinkedIn
@@ -156,14 +160,6 @@
            X
         </a>
       </div>
-    
-      <!-- Contact Form -->
-      <form class="contact" action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
     </section>
   </div>
 
