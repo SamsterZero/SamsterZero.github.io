@@ -144,10 +144,24 @@
     <!-- Contact Section -->
     <section id="contact">
       <h2>📫 Contact Me</h2>
-      <form class="contact">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
+    
+      <!-- Social Links -->
+      <div style="display:flex; gap:1rem; justify-content:center; margin-bottom:2rem;">
+        <a href="https://www.linkedin.com/in/vinaymhatre/" target="_blank" 
+           style="background:#0A66C2; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-weight:600; text-decoration:none; transition:all 0.3s;">
+           LinkedIn
+        </a>
+        <a href="https://x.com/your_x_username" target="_blank"
+           style="background:#1DA1F2; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-weight:600; text-decoration:none; transition:all 0.3s;">
+           X
+        </a>
+      </div>
+    
+      <!-- Contact Form -->
+      <form class="contact" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
