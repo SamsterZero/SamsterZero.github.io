@@ -147,11 +147,11 @@
     
       <!-- Social Links -->
       <div style="display:flex; gap:1rem; justify-content:center; margin-bottom:2rem;">
-        <a href="https://www.linkedin.com/in/vinaymhatre/" target="_blank" 
+        <a href="https://www.linkedin.com/in/vinay-mhatre-401595206" target="_blank" 
            style="background:#0A66C2; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-weight:600; text-decoration:none; transition:all 0.3s;">
            LinkedIn
         </a>
-        <a href="https://x.com/your_x_username" target="_blank"
+        <a href="https://x.com/Samster_Zero" target="_blank"
            style="background:#1DA1F2; color:white; padding:0.6rem 1.2rem; border-radius:8px; font-weight:600; text-decoration:none; transition:all 0.3s;">
            X
         </a>
