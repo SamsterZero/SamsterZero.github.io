@@ -5,37 +5,54 @@
   <title>Vinay Mhatre | Fullstack Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* ===== Global ===== */
     * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter',sans-serif;}
     body {background:#f5f5f5; color:#1f2937; line-height:1.6;}
     a {color:#3b82f6; text-decoration:none;}
     a:hover{text-decoration:underline;}
     .container {max-width:1200px; margin:0 auto; padding:2rem;}
+
+    /* ===== Hero ===== */
     header.hero {display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:6rem 2rem; background:#3b82f6; color:white;}
     header.hero h1 {font-size:3rem; margin-bottom:1rem;}
     header.hero p {font-size:1.2rem; margin-bottom:2rem;}
     .cta-btn {background:white; color:#3b82f6; padding:0.8rem 1.6rem; font-weight:600; border-radius:8px; transition:all 0.3s;}
     .cta-btn:hover {background:#e0f2fe; transform:translateY(-2px);}
+
+    /* ===== Section Titles ===== */
     section {padding:4rem 2rem;}
     section h2 {font-size:2rem; color:#111827; margin-bottom:2rem; border-bottom:3px solid #3b82f6; display:inline-block; padding-bottom:0.2rem;}
+
+    /* ===== Skills ===== */
     .skills {display:flex; flex-wrap:wrap; gap:1rem;}
     .skill {background:#e0f2fe; color:#0369a1; padding:0.5rem 1rem; border-radius:8px; font-weight:600; transition:all 0.2s;}
     .skill:hover {transform:translateY(-3px);}
+
+    /* ===== Services ===== */
     .services {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem;}
     .service-card {background:white; padding:2rem; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:all 0.3s;}
     .service-card:hover {transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.15);}
     .service-card h3 {margin-bottom:1rem; color:#3b82f6;}
     .service-card p {color:#4b5563;}
+
+    /* ===== Projects ===== */
     .projects {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem;}
     .project-card {background:white; border-radius:12px; overflow:hidden; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition:all 0.3s;}
     .project-card img {width:100%; height:200px; object-fit:cover;}
     .project-card .project-info {padding:1rem;}
     .project-card .project-info h4 {margin-bottom:0.5rem; color:#3b82f6;}
     .project-card .project-info p {color:#4b5563;}
+
+    /* ===== Contact ===== */
     .contact {display:flex; flex-direction:column; gap:1rem; max-width:400px; margin:0 auto;}
     .contact input, .contact textarea {padding:0.8rem; border-radius:8px; border:1px solid #d1d5db; width:100%; font-size:1rem;}
     .contact button {padding:0.8rem 1.6rem; border:none; border-radius:8px; background:#3b82f6; color:white; font-weight:600; cursor:pointer; transition:all 0.3s;}
     .contact button:hover {background:#2563eb;}
+
+    /* ===== Footer ===== */
     footer {text-align:center; padding:2rem; color:#6b7280; font-size:0.9rem; background:#f3f4f6;}
+
+    /* ===== Responsive ===== */
     @media(max-width:768px){
       header.hero h1 {font-size:2.2rem;}
       section h2 {font-size:1.7rem;}
@@ -47,8 +64,7 @@
   <!-- Hero Section -->
   <header class="hero">
     <h1>Hi 👋, I'm <span style="color:#ffeb3b;">Vinay Mhatre</span></h1>
-    <p>⚡ Backend Expert in Spring Boot, FastAPI, Kafka, Microservices | </p>
-    <p>🎨 Frontend: React & Next.js | ☁️ Cloud & API Security Enthusiast</p>
+    <p>⚡ Backend Expert in Spring Boot, FastAPI, Kafka, Microservices | 🎨 Frontend: React & Next.js | ☁️ Cloud & API Security Enthusiast</p>
     <a href="#contact" class="cta-btn">Hire Me / Contact</a>
   </header>
 
@@ -80,6 +96,8 @@
         <div class="skill">API Gateway Patterns</div>
       </div>
     </section>
+
+    <!-- Services Section -->
     <section id="services">
       <h2>💼 Services I Offer</h2>
       <div class="services">
@@ -101,6 +119,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Projects Section -->
     <section id="projects">
       <h2>🚀 Projects</h2>
       <div class="projects">
@@ -120,6 +140,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
       <h2>📫 Contact Me</h2>
       <form class="contact">
@@ -136,6 +158,7 @@
   </footer>
 
   <script>
+    // Smooth scroll to contact form
     document.querySelector('.cta-btn').addEventListener('click', function(e){
       e.preventDefault();
       document.querySelector('#contact').scrollIntoView({behavior:'smooth'});
