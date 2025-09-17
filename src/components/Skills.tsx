@@ -1,4 +1,6 @@
 // components/Skills.tsx
+import { motion } from "framer-motion";
+
 export default function Skills() {
   const skills = [
     {
@@ -55,20 +57,17 @@ export default function Skills() {
       </h2>
       <div className="flex flex-wrap gap-3">
         {skills.map((skill, index) => (
-          <a
+          <motion.a
             key={index}
             href={skill.href}
             target="_blank"
             rel="noopener noreferrer"
-            className={`
-                px-3 py-1 bg-neutral-800 ${skill.color}
-                rounded-lg font-medium
-                transition-all duration-100
-                hover:scale-105 hover:shadow-[0_0_15px] hover:shadow-current
-                `}
+            whileHover={{ scale: 1.05, boxShadow: "0 0 15px currentColor" }}
+            whileTap={{ scale: 0.95 }}
+            className={`px-3 py-1 bg-neutral-800 ${skill.color} rounded-lg font-medium`}
           >
             {skill.name}
-          </a>
+          </motion.a>
         ))}
       </div>
     </section>
