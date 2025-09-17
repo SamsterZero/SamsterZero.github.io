@@ -13,15 +13,21 @@ export default function Contact() {
       target: "_blank"
     },
     {
+        label:"Github",
+        href: "https://github.com/SamsterZero",
+        className: "bg-black hover:bg-neutral-600",
+        target: "_blank"
+    },
+    {
       label: "X",
       href: "https://x.com/Samster_Zero", 
-      className: "bg-neutral-700 hover:bg-neutral-600",
+      className: "bg-black hover:bg-neutral-600",
       target: "_blank"
-    }
+    },
   ];
 
   return (
-    <section id="contact" className="text-center">
+    <section id="contact" className="container mx-auto rounded-xl p-8 text-center bg-neutral-800">
       <h2 className="text-3xl font-bold text-gray-100 mb-10 inline-block relative">
         📫 Contact Me
       </h2>

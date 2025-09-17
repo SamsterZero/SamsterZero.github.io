@@ -9,7 +9,7 @@ import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-black">
       <Header />
       <div className="container mx-auto px-6 py-16 max-w-6xl">
         <Skills />
@@ -18,6 +18,6 @@ export default function Home() {
         <Contact />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
