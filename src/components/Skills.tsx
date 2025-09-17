@@ -63,7 +63,7 @@ export default function Skills() {
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, boxShadow: "0 0 15px currentColor" }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.95, boxShadow: "0 0 15px currentColor" }}
             className={`px-3 py-1 bg-neutral-800 ${skill.color} rounded-lg font-medium`}
           >
             {skill.name}
